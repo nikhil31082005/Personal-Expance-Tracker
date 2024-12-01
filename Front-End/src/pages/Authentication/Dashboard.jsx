@@ -15,7 +15,7 @@ function Dashboard({ user, setUser, onSession }) {
 
   const fetchDashboard = async () => {
     try {
-      const response = await axios.get("http://localhost:8000/auth/me", {
+      const response = await axios.get("https://personal-expance-tracker.onrender.com", {
         withCredentials: true,
       });
     
