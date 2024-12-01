@@ -20,7 +20,7 @@ const Login = ({ onLogin }) => {
     };
   
     try {
-      const response = await axios.post("http://localhost:8000/auth/login", credentials, {
+      const response = await axios.post("https://personal-expance-tracker.onrender.com", credentials, {
         withCredentials: true, // Important: include this to allow cookies
       });
   
