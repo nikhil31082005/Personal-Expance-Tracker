@@ -18,7 +18,7 @@ const ProfilePage = ({ user, setUser }) => {
     useEffect(() => {
         const fetchTransaction = async () => {
             try {
-                const response = await axios.get('http://localhost:8000/transaction/transactions', { withCredentials: true });
+                const response = await axios.get('https://personal-expance-tracker.onrender.com', { withCredentials: true });
                 setTransactions(response.data.transactions);
             } catch (err) {
                 console.error('Error fetching transactions:', err.response?.data || err.message);
