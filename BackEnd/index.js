@@ -51,7 +51,9 @@ app.get('/', (req, res) => {
   res.send("Hello world");
 })
 
-app.listen(8000, '0.0.0.0', () => {
+const PORT = 8000;
+
+app.listen(PORT, '0.0.0.0', () => {
     console.log('Server is running on port 8000.');
     connectMongoDB();
 });
