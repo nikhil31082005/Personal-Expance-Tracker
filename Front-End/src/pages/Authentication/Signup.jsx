@@ -17,7 +17,7 @@ const Signup = ({ onSignIn }) => {
     const credentials = { name, email, password, jobType };
 
     try {
-      const response = await axios.post("http://localhost:8000/auth/signup", credentials, { withCredentials: true });
+      const response = await axios.post("https://personal-expance-tracker.onrender.com", credentials, { withCredentials: true });
       const data = response.data;
 
       onSignIn(data.user);
