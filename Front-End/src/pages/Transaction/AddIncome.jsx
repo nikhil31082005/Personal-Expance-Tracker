@@ -37,7 +37,7 @@ function AddIncome({ handleCloseAddIncome, addTransaction }) {
 
         try {
             // Post data to the backend
-            const response = await axios.post('http://localhost:8000/transaction/income', formData, {
+            const response = await axios.post('https://personal-expance-tracker.onrender.com', formData, {
                 withCredentials: true, // Include cookies for JWT
             });
             console.log('Income added successfully:', response.data);
