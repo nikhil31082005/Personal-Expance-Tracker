@@ -20,7 +20,7 @@ function App() {
   useEffect(() => {
     const checkAuth = async () => {
       try {
-        const response = await axios.get('http://localhost:8000/auth/me', { withCredentials: true });
+        const response = await axios.get('https://personal-expance-tracker.onrender.com', { withCredentials: true });
         setIsAuthenticated(true);
         setUser(response.data);
       } catch (error) {
