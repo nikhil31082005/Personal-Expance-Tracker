@@ -34,7 +34,7 @@ function AddExpense({ handleCloseAddExpense, addTransaction }) {
 
         try {
             const response = await axios.post(
-                'http://localhost:8000/transaction/expence', 
+                'https://personal-expance-tracker.onrender.com', 
                 formData, 
                 { withCredentials: true } // Include credentials for cookies
             );
